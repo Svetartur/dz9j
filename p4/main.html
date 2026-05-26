@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4: Новини</title>
+    <style>
+        .news-container {
+            width: 600px;
+            margin: 30px auto;
+            font-family: Arial, sans-serif;
+        }
+        .news-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+        }
+        .news-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .news-text {
+            color: #555;
+            text-align: justify;
+        }
+        .btn-wrapper {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #load-more {
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="news-container">
+        <div id="news-list">
+            <div class="news-item">
+                <div class="news-title">What is Lorem Ipsum?</div>
+                <div class="news-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button id="load-more">Показати ще</button>
+        </div>
+    </div>
+
+    <script src="pickme.js"></script>
+</body>
+</html>

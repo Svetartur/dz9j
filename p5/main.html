@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 5: Календар</title>
+    <style>
+        .calendar-container {
+            width: 350px;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+        .inputs {
+            margin-bottom: 15px;
+        }
+        input {
+            width: 70px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+        #calendar-title {
+            font-weight: bold;
+            margin: 15px 0 5px 0;
+            font-size: 18px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calendar-container">
+        <div class="inputs">
+            <label>Month: <input type="number" id="month-input" min="1" max="12" value="8"></label>
+            <label>Year: <input type="number" id="year-input" value="2018"></label>
+            <button id="generate-btn">Generate</button>
+        </div>
+        
+        <div id="calendar-title"></div>
+        <div id="calendar-table-wrapper"></div>
+    </div>
+
+    <script src="pickme.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1: Трекбар</title>
+    <style>
+        .trackbar-container {
+            width: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .track {
+            width: 100%;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 5px;
+            position: relative;
+        }
+        .slider {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 5px;
+            position: absolute;
+            top: -5px;
+            left: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="trackbar-container">
+        <div class="track" id="track">
+            <div class="slider" id="slider"></div>
+        </div>
+    </div>
+
+    <script src="pickme.js"></script>
+</body>
+</html>
